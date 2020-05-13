@@ -32,7 +32,39 @@ public class projetocandidato {
 		System.out.println("Você tem habilitação de motorista (S/N)? ");
 		habilitacao = sc.next().charAt(0);
 		
+		// Escolaridade e experiência
 		
+		if (escolaridade == 1) {
+			nivelescolar = 10;
+		}
+		else if (escolaridade == 2) {
+			nivelescolar = 20;
+		}
+		else if (escolaridade == 3) {
+			nivelescolar = 30;
+		}
+		else {
+			nivelescolar = 40;
+		}
+		
+		if (experiencia == 0) {
+			nivelexperiencia = 0;
+		}
+		else if (experiencia > 0 && experiencia <= 2) {
+			nivelexperiencia = 10;
+		}
+		else if (experiencia > 2 && experiencia <= 5) {
+			nivelexperiencia = 20;
+		}
+		else {
+			nivelexperiencia = 40;
+		}
+		
+		System.out.println("Pontos por escolaridade: " + nivelescolar);
+		System.out.println("Pontos por experiência: " + nivelexperiencia);
+				
+				
+				
 		sc.close();
 
 	}
