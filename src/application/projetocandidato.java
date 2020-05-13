@@ -10,7 +10,8 @@ public class projetocandidato {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int escolaridade, experiencia, viagem, habilitacao;
+		int escolaridade, experiencia, nivelescolar, nivelexperiencia;
+		char viagem, habilitacao;
 		
 		// Leitura da escolaridade
 		
@@ -27,9 +28,9 @@ public class projetocandidato {
 		System.out.println("Você tem quantos anos de experiência profissional? ");
 		experiencia = sc.nextInt();
 		System.out.println("Você tem disponibilidade para viajar (S/N)? ");
-		viagem = sc.nextInt();
+		viagem = sc.next().charAt(0);
 		System.out.println("Você tem habilitação de motorista (S/N)? ");
-		habilitacao = sc.nextInt();
+		habilitacao = sc.next().charAt(0);
 		
 		
 		sc.close();
